@@ -1,0 +1,1510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#182020"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/bannerdescription">
+
+                <ImageView
+                    android:id="@+id/bannertitlepage"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/bannertitle" />
+
+                <View
+                    android:id="@+id/bgthe"
+                    android:layout_width="112dp"
+                    android:layout_height="83dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="67dp"
+                    android:background="@drawable/bannertitlemain"
+                    />
+
+                <TextView
+                    android:id="@+id/the"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/open_sans_condensed_light"
+                    android:text="The"
+                    android:textColor="#3E2723"
+                    android:textSize="90sp"
+                    android:textStyle="bold"
+                    />
+                <View
+                    android:layout_below="@id/the"
+                    android:layout_width="148dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-18dp"
+                    android:background="@drawable/bannertitlecave"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/the"
+                    android:text="CAVE"
+                    android:fontFamily="@font/open_sans_condensed_light"
+                    android:textColor="#ffffff"
+                    android:textSize="85sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-35dp"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:onClick="darkTheme"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bannerdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:src="@drawable/banner2resized"
+                    android:adjustViewBounds="true" />
+
+                <View
+                    android:layout_width="276dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/bannertextbg"
+                    />
+                <TextView
+                android:id="@+id/delicious"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/khand_semibold"
+                android:text="Delicious"
+                android:textAllCaps="true"
+                android:textColor="#a7ff40"
+                android:textSize="40sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@id/delicious"
+                android:layout_marginTop="45dp"
+                android:text="FOOD"
+                android:fontFamily="@font/khand_semibold"
+                android:textSize="40sp"
+                android:layout_marginLeft="8dp"
+                android:textColor="#ff5252"
+                />
+            <TextView
+                android:id="@+id/perfectly"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@id/delicious"
+                android:layout_marginLeft="110dp"
+                android:textSize="37sp"
+                android:text="That  perfectly"
+                android:textAllCaps="true"
+                android:fontFamily="@font/khand_semibold"
+                android:textColor="#fca22b"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@id/perfectly"
+                android:layout_marginLeft="110dp"
+                android:textSize="37sp"
+                android:text="suits your budget."
+                android:textAllCaps="true"
+                android:fontFamily="@font/khand_semibold"
+                android:textColor="#fca22b"/>
+
+
+            </RelativeLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/carticon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/cart48" />
+        <TextView
+            android:id="@+id/cartTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:layout_marginRight="22.5dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#ededed"
+            android:textSize="13sp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+    <!--1st Item-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rectangle"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/burger_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/burger"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/burger_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/burger_image"
+            android:fontFamily="casual"
+            android:text="Hamburger"
+            android:textColor="#212121"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/burger_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/burger_title"
+            android:layout_toRightOf="@id/burger_image"
+            android:text="Delicious burger with a cheesy twist!"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#757575"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:text="$7"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif" />
+        <View
+            android:id="@+id/burger_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/burger_description"
+            android:background="@drawable/line"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <View
+            android:layout_width="115dp"
+            android:layout_height="29.2dp"
+            android:layout_below="@id/burger_separator"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/addtocartbgnonveg"/>
+
+        <TextView
+            android:id="@+id/burger_addtocart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/burger_separator"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+
+            android:fontFamily="@font/imprima"
+            android:text="ADD TO CART"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#616161"/>
+
+            <!--changes-->
+
+            <Button
+                android:id="@+id/minus_hamburger"
+                android:layout_width="30dp"
+                android:layout_height="29.2dp"
+                android:layout_marginTop="3.2dp"
+                android:background="@drawable/buttonbg"
+                android:layout_below="@id/burger_separator"
+                android:text="-"
+                android:textColor="#FF9E9E"
+                android:textAlignment="center"
+                android:layout_toLeftOf="@id/countburger"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="burgerminus"
+                />
+        <!--   <TextView
+            android:id="@+id/minus_hamburger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#FF9E9E"
+            android:textSize="24sp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@id/burger_separator"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_toLeftOf="@id/countburger"
+            android:background="?attr/selectableItemBackground"
+            />-->
+
+        <TextView
+                android:id="@+id/countburger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:layout_toLeftOf="@id/plus_hamburger"
+                android:layout_below="@id/burger_separator"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginLeft="14dp"
+                android:textColor="#616161"
+                />
+
+            <Button
+                android:id="@+id/plus_hamburger"
+                android:text="+"
+                android:textColor="#FF9E9E"
+                android:layout_width="30dp"
+                android:layout_height="29.2dp"
+                android:layout_marginTop="3.2dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/buttonbg"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/burger_separator"
+                android:layout_marginRight="9dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="burgerplus"
+                />
+
+            <!--<TextView
+                android:id="@+id/plus_hamburger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="#FF9E9E"
+                android:textSize="24sp"
+                android:layout_marginLeft="22dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:layout_below="@id/burger_separator"
+                />-->
+    </RelativeLayout>
+
+
+    <!--2nd Item-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rectangle"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/frenchfries_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/frenchfries"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/frenchfries_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="French Fries"
+            android:layout_toRightOf="@id/frenchfries_image"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#212121"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/frenchfries_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frenchfries_title"
+            android:layout_toRightOf="@id/frenchfries_image"
+            android:text="Potato Crisps made with all the care you needed."
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#757575"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:text="$3"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif" />
+        <View
+            android:id="@+id/frenchfries_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/frenchfries_description"
+            android:background="@drawable/line"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <View
+            android:layout_width="115dp"
+            android:layout_height="29.2dp"
+            android:layout_below="@id/frenchfries_separator"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/addtocartbgveg"/>
+
+        <TextView
+            android:id="@+id/frenchfries_addtocart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frenchfries_separator"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/imprima"
+            android:text="ADD TO CART"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#616161"/>
+
+        <Button
+            android:id="@+id/minus_frenchfries"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/buttonbg"
+            android:layout_below="@id/frenchfries_separator"
+            android:focusable="true"
+            android:text="-"
+            android:textColor="#B2E379"
+            android:layout_toLeftOf="@id/countfrenchfries"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="frenchfriesminus"/>
+
+       <!-- <TextView
+            android:id="@+id/minus_frenchfries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#B2E379"
+            android:textSize="24sp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@id/frenchfries_separator"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_toLeftOf="@id/countfrenchfries"
+            />-->
+
+
+        <TextView
+            android:id="@+id/countfrenchfries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25dp"
+            android:layout_toLeftOf="@id/plus_frenchfries"
+            android:layout_below="@id/frenchfries_separator"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="#616161"
+            />
+
+        <Button
+            android:id="@+id/plus_frenchfries"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:text="+"
+            android:textColor="#B2E379"
+            android:layout_marginTop="3.2dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/buttonbg"
+            android:focusable="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/frenchfries_separator"
+            android:layout_marginRight="9dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="frenchfriesplus"
+            />
+
+        <!--<TextView
+            android:id="@+id/plus_frenchfries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#B2E379"
+            android:textSize="24sp"
+            android:layout_marginLeft="22dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_below="@id/frenchfries_separator"
+            />-->
+
+    </RelativeLayout>
+
+
+    <!--3rd Item-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rectangle"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pizza_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/pizza"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/pizza_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicken Pizza"
+            android:layout_toRightOf="@id/pizza_image"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#212121"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/pizza_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pizza_title"
+            android:layout_toRightOf="@id/pizza_image"
+            android:text="Rich midterannean flavour enough to serve 2."
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#757575"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:text="$12"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif" />
+        <View
+            android:id="@+id/pizza_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/pizza_description"
+            android:background="@drawable/line"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <View
+            android:layout_width="115dp"
+            android:layout_height="29.2dp"
+            android:layout_below="@id/pizza_separator"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/addtocartbgnonveg"/>
+
+        <TextView
+            android:id="@+id/pizza_addtocart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pizza_separator"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/imprima"
+            android:text="ADD TO CART"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#616161"/>
+
+        <Button
+            android:id="@+id/minus_pizza"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:text="-"
+            android:textColor="#FF9E9E"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/buttonbg"
+            android:layout_below="@id/pizza_separator"
+            android:focusable="true"
+            android:layout_toLeftOf="@id/countpizza"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="chickenpizzaminus"/>
+
+        <!--<TextView
+            android:id="@+id/minus_pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#FF9E9E"
+            android:textSize="24sp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@id/pizza_separator"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_toLeftOf="@id/countpizza"
+            />-->
+
+
+        <TextView
+            android:id="@+id/countpizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25dp"
+            android:layout_toLeftOf="@id/plus_pizza"
+            android:layout_below="@id/pizza_separator"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="#616161"
+            />
+
+        <Button
+            android:id="@+id/plus_pizza"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:text="+"
+            android:textColor="#FF9E9E"
+            android:layout_marginTop="3.2dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/buttonbg"
+            android:focusable="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/pizza_separator"
+            android:layout_marginRight="9dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="chickenpizzaplus"
+            />
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#FF9E9E"
+            android:textSize="24sp"
+            android:layout_marginLeft="22dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_below="@id/pizza_separator"
+            />-->
+
+
+    </RelativeLayout>
+
+    <!--4th Item-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rectangle"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cmushroom_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/cmushroom"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/cmushroom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creamy Mushroom"
+            android:layout_toRightOf="@id/cmushroom_image"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#212121"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/cmushroom_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cmushroom_title"
+            android:layout_toRightOf="@id/cmushroom_image"
+            android:text="Creamy Delight that will melt in your mouth."
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#757575"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:text="$5"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif" />
+        <View
+            android:id="@+id/cmushroom_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/cmushroom_description"
+            android:background="@drawable/line"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <View
+            android:layout_width="115dp"
+            android:layout_height="29.2dp"
+            android:layout_below="@id/cmushroom_separator"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/addtocartbgveg"/>
+
+        <TextView
+            android:id="@+id/cmushroom_addtocart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cmushroom_separator"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/imprima"
+            android:text="ADD TO CART"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#616161"/>
+
+        <Button
+            android:id="@+id/minus_cmushroom"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/buttonbg"
+            android:layout_below="@id/cmushroom_separator"
+            android:focusable="true"
+            android:text="-"
+            android:textColor="#B2E379"
+            android:layout_toLeftOf="@id/countcmushroom"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="cmushroomminus"/>
+
+        <!--<TextView
+            android:id="@+id/minus_cmushroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#B2E379"
+            android:textSize="24sp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@id/cmushroom_separator"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_toLeftOf="@id/countcmushroom"
+            />-->
+
+
+        <TextView
+            android:id="@+id/countcmushroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25dp"
+            android:layout_toLeftOf="@id/plus_cmushroom"
+            android:layout_below="@id/cmushroom_separator"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="#616161"
+            />
+
+        <Button
+            android:id="@+id/plus_cmushroom"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:layout_marginTop="3.2dp"
+            android:layout_marginLeft="14dp"
+            android:text="+"
+            android:textColor="#B2E379"
+            android:background="@drawable/buttonbg"
+            android:focusable="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/cmushroom_separator"
+            android:layout_marginRight="9dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="cmushroomplus"
+            />
+
+        <!--<TextView
+            android:id="@+id/plus_cmushroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#B2E379"
+            android:textSize="24sp"
+            android:layout_marginLeft="22dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_below="@id/cmushroom_separator"
+            />-->
+
+    </RelativeLayout>
+
+    <!--5th Item-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rectangle"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chickendrumstick_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/chickendrumstick"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/chickendrumstick_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicken Drumsticks"
+            android:layout_toRightOf="@id/chickendrumstick_image"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#212121"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/chickendrumstick_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chickendrumstick_title"
+            android:layout_toRightOf="@id/chickendrumstick_image"
+            android:text="Crispy Chicken legs served with hot sauce."
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#757575"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:text="$10"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif" />
+        <View
+            android:id="@+id/chickendrumstick_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/chickendrumstick_description"
+            android:background="@drawable/line"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <View
+            android:layout_width="115dp"
+            android:layout_height="29.2dp"
+            android:layout_below="@id/chickendrumstick_separator"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/addtocartbgnonveg"/>
+
+        <TextView
+            android:id="@+id/chickendrumstick_addtocart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chickendrumstick_separator"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/imprima"
+            android:text="ADD TO CART"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#616161"/>
+
+        <Button
+            android:id="@+id/minus_chickendrumstick"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:layout_marginTop="3.2dp"
+            android:text="-"
+            android:textColor="#FF9E9E"
+            android:background="@drawable/buttonbg"
+            android:layout_below="@id/chickendrumstick_separator"
+            android:focusable="true"
+            android:layout_toLeftOf="@id/countchickendrumstick"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="chckenDsticksminus"/>
+
+        <!--<TextView
+            android:id="@+id/minus_chickendrumstick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#FF9E9E"
+            android:textSize="24sp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@id/chickendrumstick_separator"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_toLeftOf="@id/countchickendrumstick"
+            />-->
+
+
+        <TextView
+            android:id="@+id/countchickendrumstick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25dp"
+            android:layout_toLeftOf="@id/plus_chickendrumstick"
+            android:layout_below="@id/chickendrumstick_separator"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="#616161"
+            />
+
+        <Button
+            android:id="@+id/plus_chickendrumstick"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:layout_marginTop="3.2dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/buttonbg"
+            android:text="+"
+            android:textColor="#FF9E9E"
+            android:focusable="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/chickendrumstick_separator"
+            android:layout_marginRight="9dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="chckenDsticksplus"
+            />
+
+        <!--<TextView
+            android:id="@+id/plus_chickendrumstick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#FF9E9E"
+            android:textSize="24sp"
+            android:layout_marginLeft="22dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_below="@id/chickendrumstick_separator"
+            />-->
+
+
+    </RelativeLayout>
+
+    <!--6th Item-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rectangle"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/paneerbm_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/paneerbuttermasala"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/paneerbm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paneer Butter Masala"
+            android:layout_toRightOf="@id/paneerbm_image"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#212121"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/paneerbm_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paneerbm_title"
+            android:layout_toRightOf="@id/paneerbm_image"
+            android:text="Authentic Indian taste from the north."
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#757575"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:text="$8"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif" />
+        <View
+            android:id="@+id/paneerbm_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/paneerbm_description"
+            android:background="@drawable/line"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <View
+            android:layout_width="115dp"
+            android:layout_height="29.2dp"
+            android:layout_below="@id/paneerbm_separator"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/addtocartbgveg"/>
+
+        <TextView
+            android:id="@+id/paneerbm_addtocart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paneerbm_separator"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/imprima"
+            android:text="ADD TO CART"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#616161"/>
+
+        <Button
+            android:id="@+id/minus_paneerbm"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/buttonbg"
+            android:text="-"
+            android:textColor="#B2E379"
+            android:layout_below="@id/paneerbm_separator"
+            android:focusable="true"
+            android:layout_toLeftOf="@id/countpaneerbm"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="paneerBMminus"/>
+
+        <!--<TextView
+            android:id="@+id/minus_paneerbm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#B2E379"
+            android:textSize="24sp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@id/paneerbm_separator"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_toLeftOf="@id/countpaneerbm"
+            />-->
+
+
+        <TextView
+            android:id="@+id/countpaneerbm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25dp"
+            android:layout_toLeftOf="@id/plus_paneerbm"
+            android:layout_below="@id/paneerbm_separator"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="#616161"
+            />
+
+        <Button
+            android:id="@+id/plus_paneerbm"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:layout_marginTop="3.2dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/buttonbg"
+            android:text="+"
+            android:textColor="#B2E379"
+            android:focusable="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/paneerbm_separator"
+            android:layout_marginRight="9dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="paneerBMplus"/>
+
+       <!-- <TextView
+            android:id="@+id/plus_paneerbm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#B2E379"
+            android:textSize="24sp"
+            android:layout_marginLeft="22dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_below="@id/paneerbm_separator"
+            />-->
+
+    </RelativeLayout>
+
+
+    <!--7th Item-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rectangle"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chickenbharta_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/chickenbharta"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/chickenbharta_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicken Bharta"
+            android:layout_toRightOf="@id/chickenbharta_image"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#212121"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/chickenbharta_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chickenbharta_title"
+            android:layout_toRightOf="@id/chickenbharta_image"
+            android:text="Minced Chicken with a creamy touch."
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#757575"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:text="$9"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif" />
+        <View
+            android:id="@+id/chickenbharta_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/chickenbharta_description"
+            android:background="@drawable/line"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <View
+            android:layout_width="115dp"
+            android:layout_height="29.2dp"
+            android:layout_below="@id/chickenbharta_separator"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/addtocartbgnonveg"/>
+
+        <TextView
+            android:id="@+id/chickenbharta_addtocart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chickenbharta_separator"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/imprima"
+            android:text="ADD TO CART"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#616161"/>
+
+        <Button
+            android:id="@+id/minus_chickenbharta"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/buttonbg"
+            android:text="-"
+            android:textColor="#FF9E9E"
+            android:layout_below="@id/chickenbharta_separator"
+            android:focusable="true"
+            android:layout_toLeftOf="@id/countchickenbharta"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="chickenBhartaminus"/>
+
+        <!--<TextView
+            android:id="@+id/minus_chickenbharta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#FF9E9E"
+            android:textSize="24sp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@id/chickenbharta_separator"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_toLeftOf="@id/countchickenbharta"
+            />-->
+
+
+        <TextView
+            android:id="@+id/countchickenbharta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25dp"
+            android:layout_toLeftOf="@id/plus_chickenbharta"
+            android:layout_below="@id/chickenbharta_separator"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="#616161"
+            />
+
+        <Button
+            android:id="@+id/plus_chickenbharta"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:layout_marginTop="3.2dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/buttonbg"
+            android:text="+"
+            android:textColor="#FF9E9E"
+            android:focusable="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/chickenbharta_separator"
+            android:layout_marginRight="9dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="chickenBhartaplus"/>
+
+        <!--<TextView
+            android:id="@+id/plus_chickenbharta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#FF9E9E"
+            android:textSize="24sp"
+            android:layout_marginLeft="22dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_below="@id/chickenbharta_separator"
+            />-->
+
+    </RelativeLayout>
+
+    <!--8th Item-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rectangle"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/naan_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/naan"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/naan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Plain/Butter) Naan"
+            android:layout_toRightOf="@id/naan_image"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#212121"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/naan_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/naan_title"
+            android:layout_toRightOf="@id/naan_image"
+            android:text="A perfectly baked paratha in a tandoor "
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#757575"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:text="$4"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif" />
+        <View
+            android:id="@+id/naan_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/naan_description"
+            android:background="@drawable/line"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <View
+            android:layout_width="115dp"
+            android:layout_height="29.2dp"
+            android:layout_below="@id/naan_separator"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/addtocartbgveg"/>
+
+        <TextView
+            android:id="@+id/naan_addtocart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/naan_separator"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/imprima"
+            android:text="ADD TO CART"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#616161"/>
+
+        <Button
+            android:id="@+id/minus_naan"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:layout_marginTop="3.2dp"
+            android:background="@drawable/buttonbg"
+            android:text="-"
+            android:textColor="#B2E379"
+            android:layout_below="@id/naan_separator"
+            android:focusable="true"
+            android:layout_toLeftOf="@id/countnaan"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="naanminus"/>
+
+        <!--<TextView
+            android:id="@+id/minus_naan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#B2E379"
+            android:textSize="24sp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@id/naan_separator"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_toLeftOf="@id/countnaan"
+            />-->
+
+
+        <TextView
+            android:id="@+id/countnaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25dp"
+            android:layout_toLeftOf="@id/plus_naan"
+            android:layout_below="@id/naan_separator"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="#616161"
+            />
+
+        <Button
+            android:id="@+id/plus_naan"
+            android:layout_width="30dp"
+            android:layout_height="29.2dp"
+            android:layout_marginTop="3.2dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/buttonbg"
+            android:text="+"
+            android:textColor="#B2E379"
+            android:focusable="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/naan_separator"
+            android:layout_marginRight="9dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="naanplus"/>
+
+        <!--<TextView
+            android:id="@+id/plus_naan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#B2E379"
+            android:textSize="24sp"
+            android:layout_marginLeft="22dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_below="@id/naan_separator"
+            />-->
+
+    </RelativeLayout>
+
+    <!--Last item-->
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F0D4">
+
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numbers"
+        android:paddingTop="30dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="30dp"
+        android:background="#FFA100"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+       <!-- android:onClick="numbersActivity"-->
+
+    <TextView
+        android:id="@+id/family_members"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Family Members"
+        android:paddingTop="30dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="30dp"
+        android:background="#2D9C05"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Colors"
+        android:paddingTop="30dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="30dp"
+        android:background="#9504B5"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/phrases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phrases"
+        android:paddingTop="30dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="30dp"
+        android:background="#03B4CC"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+
+</LinearLayout>
