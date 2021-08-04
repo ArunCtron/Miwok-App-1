@@ -2,6 +2,7 @@ package com.example.miwokapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
@@ -17,17 +18,18 @@ public class NumbersActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
-        ArrayList<String> num=new ArrayList<String>();
-        num.add("One");
-        num.add("Two");
-        num.add("Three");
-        num.add("Four");
-        num.add("Five");
-        num.add("Six");
-        num.add("Seven");
-        num.add("Eight");
-        num.add("Nine");
-        num.add("Ten");
+        ArrayList<Conversion> num=new ArrayList<Conversion>();
+        num.add(new Conversion("Lutti","One",R.drawable.number_one,R.raw.number_one));
+        num.add(new Conversion("Otiiko","Two",R.drawable.number_two,R.raw.number_two));
+        num.add(new Conversion("Tolookosu","three",R.drawable.number_three,R.raw.number_three));
+        num.add(new Conversion("Oyyisa","Four",R.drawable.number_four,R.raw.number_four));
+        num.add(new Conversion("Massokka","Five",R.drawable.number_five,R.raw.number_five));
+        num.add(new Conversion("Temmokka","Six",R.drawable.number_six,R.raw.number_six));
+        num.add(new Conversion("Kenekaku","Seven",R.drawable.number_seven,R.raw.number_seven));
+        num.add(new Conversion("Kawinta","Eight",R.drawable.number_eight,R.raw.number_eight));
+        num.add(new Conversion("Wo'e","Nine",R.drawable.number_nine,R.raw.number_nine));
+        num.add(new Conversion("Na'aacha","Ten",R.drawable.number_ten,R.raw.number_ten));
+
 
 //        LinearLayout view=findViewById(R.id.rootView);
 //        for(int i=0;i<num.size();i++)
@@ -37,9 +39,15 @@ public class NumbersActivity extends AppCompatActivity{
 //            view.addView(numb);
 //            numb.setTextSize(20)
 //        }
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, R.layout.num_layout, num);
+        Adapter itemsAdapter = new Adapter(this,num, Color.parseColor("#FFA100"));
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(itemsAdapter);
 
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Adapter.releaseMediaPlayer();
     }
 }

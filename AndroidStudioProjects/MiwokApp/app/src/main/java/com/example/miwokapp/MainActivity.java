@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         colors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent colors=new Intent(MainActivity.this, ColorsActivity.class);
+                Intent colors=new Intent(MainActivity.this, Colors.class);
                 startActivity(colors);
             }
         });
